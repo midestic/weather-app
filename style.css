@@ -1,0 +1,162 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Main Container */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #e0f7fa;
+    font-family: Arial, sans-serif;
+  }
+  
+  .weather-app {
+    text-align: center;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 320px;
+    width: 100%;
+  }
+  
+  h1 {
+    color: #00796b;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styling */
+  .form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #00796b;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    background: #00796b;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #004d40;
+  }
+  
+  /* Weather Card Styling */
+  .card {
+    display: none; 
+    background: #e0f2f1;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* .hidden {
+    display: none;
+  } */
+  
+  .city-name {
+    font-size: 24px;
+    color: #00796b;
+    margin-bottom: 10px;
+  }
+  
+  .temperature {
+    font-size: 40px;
+    color: #004d40;
+  }
+  
+  .description,
+  .humidity, .error-message {
+    font-size: 18px;
+    color: #00796b;
+  }
+  
+
+  
+
+  @media (max-width: 768px) {
+    .weather-app {
+      max-width: 100%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    .input,
+    button {
+      padding: 8px;
+    }
+  
+    .city-name {
+      font-size: 20px;
+    }
+  
+    .temperature {
+      font-size: 32px;
+    }
+  
+    .description,
+    .humidity,
+    .error-message {
+      font-size: 16px;
+    }
+  }
+  
+  /* Mobile screens */
+  @media (max-width: 480px) {
+    .form {
+      flex-direction: column;
+      gap: 0;
+    }
+  
+    .input,
+    button {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .input {
+      margin-bottom: 10px;
+    }
+  
+    .weather-app {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    .city-name {
+      font-size: 18px;
+    }
+  
+    .temperature {
+      font-size: 28px;
+    }
+  
+    .description,
+    .humidity,
+    .error-message {
+      font-size: 14px;
+    }
+  }
